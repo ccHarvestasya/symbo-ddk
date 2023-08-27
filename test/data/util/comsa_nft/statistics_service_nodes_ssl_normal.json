@@ -1,0 +1,615 @@
+[
+  {
+    "_id": "64e9dc729311eb0012b7bbf7",
+    "version": 16777990,
+    "publicKey": "3D857D8A095981626AE768D4222907F2B540DBF10E43AA5693421BA167E32C32",
+    "networkGenerationHashSeed": "57F7DA205008026C776CB6AED843393F04CD458E0AA2D9F1D5F31A402072B2D6",
+    "roles": 3,
+    "port": 7900,
+    "networkIdentifier": 104,
+    "host": "0-0-0-0-0-0-0-6.tokyo-node.jp",
+    "friendlyName": "0-0-0-0-0-0-0-6.Tokyo-Node.JP",
+    "lastAvailable": "2023-08-26T11:05:22.165Z",
+    "hostDetail": {
+      "host": "0-0-0-0-0-0-0-6.tokyo-node.jp",
+      "coordinates": {
+        "latitude": 51.1878,
+        "longitude": 6.8607
+      },
+      "location": "Düsseldorf, NW, Germany",
+      "ip": "75.119.148.8",
+      "organization": "DIRECTPATH",
+      "as": "AS51167 Contabo GmbH",
+      "continent": "Europe",
+      "country": "Germany",
+      "region": "NW",
+      "city": "Düsseldorf",
+      "district": "",
+      "zip": "40599"
+    },
+    "peerStatus": {
+      "isAvailable": true,
+      "lastStatusCheck": 1693047462195
+    },
+    "apiStatus": {
+      "restGatewayUrl": "https://0-0-0-0-0-0-0-6.tokyo-node.jp:3001",
+      "isAvailable": true,
+      "isHttpsEnabled": true,
+      "lastStatusCheck": 1693047462242,
+      "webSocket": {
+        "isAvailable": true,
+        "wss": true,
+        "url": "wss://0-0-0-0-0-0-0-6.tokyo-node.jp:3001/ws"
+      },
+      "nodePublicKey": "26A0B4C3EAD44D72F192A1E177C2A86872ACA503D9B308D62E4A230AB01107E5",
+      "chainHeight": 2567975,
+      "finalization": {
+        "height": 2567940,
+        "epoch": 1785,
+        "point": 20,
+        "hash": "A0999197DAF687B9F6B75D80C20053DB428A996E4794D7C81795B86807E6DC94"
+      },
+      "unlockedAccountCount": 3,
+      "isAvailableNetworkProperties": true,
+      "nodeStatus": {
+        "apiNode": "up",
+        "db": "up"
+      },
+      "restVersion": "2.4.3"
+    },
+    "certificateExpiration": "2024-04-27T13:12:59.000Z",
+    "__v": 0
+  },
+  {
+    "_id": "64e9dc729311eb0012b7b9fa",
+    "version": 16777990,
+    "publicKey": "67E2DF4F33A5AB3B51C17E2C9089E812338E3DCC8B6006C845D4D6DCFE624DA2",
+    "networkGenerationHashSeed": "57F7DA205008026C776CB6AED843393F04CD458E0AA2D9F1D5F31A402072B2D6",
+    "roles": 3,
+    "port": 7900,
+    "networkIdentifier": 104,
+    "host": "farm1.harvest-xym.tokyo",
+    "friendlyName": "farm1.harvest-xym.tokyo",
+    "lastAvailable": "2023-08-26T11:05:22.165Z",
+    "hostDetail": {
+      "host": "farm1.harvest-xym.tokyo",
+      "coordinates": {
+        "latitude": 53.3498,
+        "longitude": -6.26031
+      },
+      "location": "Dublin, L, Ireland",
+      "ip": "34.254.1.203",
+      "organization": "AWS EC2 (eu-west-1)",
+      "as": "AS16509 Amazon.com, Inc.",
+      "continent": "Europe",
+      "country": "Ireland",
+      "region": "L",
+      "city": "Dublin",
+      "district": "",
+      "zip": "D02"
+    },
+    "peerStatus": {
+      "isAvailable": true,
+      "lastStatusCheck": 1693047019201
+    },
+    "apiStatus": {
+      "restGatewayUrl": "https://farm1.harvest-xym.tokyo:3001",
+      "isAvailable": true,
+      "isHttpsEnabled": true,
+      "lastStatusCheck": 1693047020573,
+      "webSocket": {
+        "isAvailable": true,
+        "wss": true,
+        "url": "wss://farm1.harvest-xym.tokyo:3001/ws"
+      },
+      "nodePublicKey": "8EA659FB4C675321239665F362B5D68EBB25091E01015615D8BE90BC45DED296",
+      "chainHeight": 2567960,
+      "finalization": {
+        "height": 2567940,
+        "epoch": 1785,
+        "point": 20,
+        "hash": "A0999197DAF687B9F6B75D80C20053DB428A996E4794D7C81795B86807E6DC94"
+      },
+      "unlockedAccountCount": 4,
+      "isAvailableNetworkProperties": true,
+      "nodeStatus": {
+        "apiNode": "up",
+        "db": "up"
+      },
+      "restVersion": "2.4.3"
+    },
+    "certificateExpiration": "2024-05-21T12:32:12.000Z",
+    "__v": 0
+  },
+  {
+    "_id": "64e9dc729311eb0012b7bc4a",
+    "version": 16777990,
+    "publicKey": "404C5BBA8566DBBA284EB78B778B355CBAA026797D3554695621151A153514D2",
+    "networkGenerationHashSeed": "57F7DA205008026C776CB6AED843393F04CD458E0AA2D9F1D5F31A402072B2D6",
+    "roles": 3,
+    "port": 7900,
+    "networkIdentifier": 104,
+    "host": "symbology.from.nagoya",
+    "friendlyName": "Symbols from Nagoya",
+    "lastAvailable": "2023-08-26T11:05:22.166Z",
+    "hostDetail": {
+      "host": "symbology.from.nagoya",
+      "coordinates": {
+        "latitude": 51.2184,
+        "longitude": 6.7734
+      },
+      "location": "Düsseldorf, NW, Germany",
+      "ip": "82.208.21.191",
+      "organization": "Casablanca INT",
+      "as": "AS51167 Contabo GmbH",
+      "continent": "Europe",
+      "country": "Germany",
+      "region": "NW",
+      "city": "Düsseldorf",
+      "district": "",
+      "zip": "40213"
+    },
+    "peerStatus": {
+      "isAvailable": true,
+      "lastStatusCheck": 1693047515551
+    },
+    "apiStatus": {
+      "restGatewayUrl": "https://symbology.from.nagoya:3001",
+      "isAvailable": true,
+      "isHttpsEnabled": true,
+      "lastStatusCheck": 1693047515593,
+      "webSocket": {
+        "isAvailable": true,
+        "wss": true,
+        "url": "wss://symbology.from.nagoya:3001/ws"
+      },
+      "nodePublicKey": "99F1CCB73BAF22AA87946270DD7165CB9185F0E9D94FF94D299F8E897F2BD5DC",
+      "chainHeight": 2567977,
+      "finalization": {
+        "height": 2567940,
+        "epoch": 1785,
+        "point": 20,
+        "hash": "A0999197DAF687B9F6B75D80C20053DB428A996E4794D7C81795B86807E6DC94"
+      },
+      "unlockedAccountCount": 2,
+      "isAvailableNetworkProperties": true,
+      "nodeStatus": {
+        "apiNode": "up",
+        "db": "up"
+      },
+      "restVersion": "2.4.3"
+    },
+    "certificateExpiration": "2024-03-12T22:17:12.000Z",
+    "__v": 0
+  },
+  {
+    "_id": "64e9dc729311eb0012b7ba0d",
+    "version": 16777990,
+    "publicKey": "26153D7DED9DCD0D028C26FB122A57A2C7F2DE3E955BBD905B09F9AD54089700",
+    "networkGenerationHashSeed": "57F7DA205008026C776CB6AED843393F04CD458E0AA2D9F1D5F31A402072B2D6",
+    "roles": 7,
+    "port": 7900,
+    "networkIdentifier": 104,
+    "host": "xym445.allnodes.me",
+    "friendlyName": "Allnodes445",
+    "lastAvailable": "2023-08-26T11:05:22.165Z",
+    "hostDetail": {
+      "host": "xym445.allnodes.me",
+      "coordinates": {
+        "latitude": 50.475,
+        "longitude": 12.365
+      },
+      "location": "Falkenstein, SN, Germany",
+      "ip": "46.4.217.228",
+      "organization": "",
+      "as": "AS24940 Hetzner Online GmbH",
+      "continent": "Europe",
+      "country": "Germany",
+      "region": "SN",
+      "city": "Falkenstein",
+      "district": "",
+      "zip": "08223"
+    },
+    "peerStatus": {
+      "isAvailable": true,
+      "lastStatusCheck": 1693047033401
+    },
+    "apiStatus": {
+      "restGatewayUrl": "https://xym445.allnodes.me:3001",
+      "isAvailable": true,
+      "isHttpsEnabled": true,
+      "lastStatusCheck": 1693047033603,
+      "webSocket": {
+        "isAvailable": true,
+        "wss": true,
+        "url": "wss://xym445.allnodes.me:3001/ws"
+      },
+      "nodePublicKey": "3E81C5251EC72D7EF3108718D9EDAB6C49CE5F18E39DDB74CA024C017D558FD6",
+      "chainHeight": 2567960,
+      "finalization": {
+        "height": 2567940,
+        "epoch": 1785,
+        "point": 20,
+        "hash": "A0999197DAF687B9F6B75D80C20053DB428A996E4794D7C81795B86807E6DC94"
+      },
+      "unlockedAccountCount": 2,
+      "isAvailableNetworkProperties": true,
+      "nodeStatus": {
+        "apiNode": "up",
+        "db": "up"
+      },
+      "restVersion": "2.4.3"
+    },
+    "votingKeyEndEpoch": 1818,
+    "certificateExpiration": "2024-05-13T12:08:44.000Z",
+    "__v": 0
+  },
+  {
+    "_id": "64e9dc729311eb0012b7ba92",
+    "version": 16777990,
+    "publicKey": "41EF8EB358A20DC3BB5F2442EFFFC7FAF1B812E843A44797A0106372EF5C9C2C",
+    "networkGenerationHashSeed": "57F7DA205008026C776CB6AED843393F04CD458E0AA2D9F1D5F31A402072B2D6",
+    "roles": 7,
+    "port": 7900,
+    "networkIdentifier": 104,
+    "host": "xym27.allnodes.me",
+    "friendlyName": "Allnodes27",
+    "lastAvailable": "2023-08-26T11:05:22.165Z",
+    "hostDetail": {
+      "host": "xym27.allnodes.me",
+      "coordinates": {
+        "latitude": 50.475,
+        "longitude": 12.365
+      },
+      "location": "Falkenstein, SN, Germany",
+      "ip": "178.63.235.205",
+      "organization": "",
+      "as": "AS24940 Hetzner Online GmbH",
+      "continent": "Europe",
+      "country": "Germany",
+      "region": "SN",
+      "city": "Falkenstein",
+      "district": "",
+      "zip": "08223"
+    },
+    "peerStatus": {
+      "isAvailable": true,
+      "lastStatusCheck": 1693047142279
+    },
+    "apiStatus": {
+      "restGatewayUrl": "https://xym27.allnodes.me:3001",
+      "isAvailable": true,
+      "isHttpsEnabled": true,
+      "lastStatusCheck": 1693047142446,
+      "webSocket": {
+        "isAvailable": true,
+        "wss": true,
+        "url": "wss://xym27.allnodes.me:3001/ws"
+      },
+      "nodePublicKey": "314701B9DE6E10635AB4FAEC7A5F99027ADCACEE895462F363D49E9544FBDDB7",
+      "chainHeight": 2567964,
+      "finalization": {
+        "height": 2567940,
+        "epoch": 1785,
+        "point": 20,
+        "hash": "A0999197DAF687B9F6B75D80C20053DB428A996E4794D7C81795B86807E6DC94"
+      },
+      "unlockedAccountCount": 4,
+      "isAvailableNetworkProperties": true,
+      "nodeStatus": {
+        "apiNode": "up",
+        "db": "up"
+      },
+      "restVersion": "2.4.3"
+    },
+    "votingKeyEndEpoch": 1818,
+    "certificateExpiration": "2024-05-13T12:40:06.000Z",
+    "__v": 0
+  },
+  {
+    "_id": "64e9dc729311eb0012b7bc5f",
+    "version": 16777990,
+    "publicKey": "11BA561216D9A571AE1C5F86F63BC1527ADBC47D74CCCEB41D698F7D4A78D7B8",
+    "networkGenerationHashSeed": "57F7DA205008026C776CB6AED843393F04CD458E0AA2D9F1D5F31A402072B2D6",
+    "roles": 3,
+    "port": 7900,
+    "networkIdentifier": 104,
+    "host": "0-0-0-0-0-0-0-1.tokyo-node.fun",
+    "friendlyName": "0-0-0-0-0-0-0-1.Tokyo-Node.FUN",
+    "lastAvailable": "2023-08-26T11:05:22.166Z",
+    "hostDetail": {
+      "host": "0-0-0-0-0-0-0-1.tokyo-node.fun",
+      "coordinates": {
+        "latitude": 35.6887,
+        "longitude": 139.745
+      },
+      "location": "Tokyo, 13, Japan",
+      "ip": "160.16.210.66",
+      "organization": "SAKURA Internet Inc.",
+      "as": "AS9370 SAKURA Internet Inc.",
+      "continent": "Asia",
+      "country": "Japan",
+      "region": "13",
+      "city": "Tokyo",
+      "district": "",
+      "zip": "100-0001"
+    },
+    "peerStatus": {
+      "isAvailable": true,
+      "lastStatusCheck": 1693047549258
+    },
+    "apiStatus": {
+      "restGatewayUrl": "https://0-0-0-0-0-0-0-1.tokyo-node.fun:3001",
+      "isAvailable": true,
+      "isHttpsEnabled": true,
+      "lastStatusCheck": 1693047550860,
+      "webSocket": {
+        "isAvailable": true,
+        "wss": true,
+        "url": "wss://0-0-0-0-0-0-0-1.tokyo-node.fun:3001/ws"
+      },
+      "nodePublicKey": "34DD9E826047A09AE63AAB2E067665352472C42072609BFDB082EBD842B56856",
+      "chainHeight": 2567978,
+      "finalization": {
+        "height": 2567940,
+        "epoch": 1785,
+        "point": 20,
+        "hash": "A0999197DAF687B9F6B75D80C20053DB428A996E4794D7C81795B86807E6DC94"
+      },
+      "unlockedAccountCount": 3,
+      "isAvailableNetworkProperties": true,
+      "nodeStatus": {
+        "apiNode": "up",
+        "db": "up"
+      },
+      "restVersion": "2.4.3"
+    },
+    "certificateExpiration": "2023-10-01T10:50:34.000Z",
+    "__v": 0
+  },
+  {
+    "_id": "64e9dc729311eb0012b7bb26",
+    "version": 16777990,
+    "publicKey": "2D98A63AF066AF0D458D2C2068C94BF0BAC66F87E6D105BC7BAC36D9F1F6B279",
+    "networkGenerationHashSeed": "57F7DA205008026C776CB6AED843393F04CD458E0AA2D9F1D5F31A402072B2D6",
+    "roles": 3,
+    "port": 7900,
+    "networkIdentifier": 104,
+    "host": "xym907.allnodes.me",
+    "friendlyName": "Allnodes907",
+    "lastAvailable": "2023-08-26T11:05:22.165Z",
+    "hostDetail": {
+      "host": "xym907.allnodes.me",
+      "coordinates": {
+        "latitude": 50.475,
+        "longitude": 12.365
+      },
+      "location": "Falkenstein, SN, Germany",
+      "ip": "46.4.162.110",
+      "organization": "",
+      "as": "AS24940 Hetzner Online GmbH",
+      "continent": "Europe",
+      "country": "Germany",
+      "region": "SN",
+      "city": "Falkenstein",
+      "district": "",
+      "zip": "08223"
+    },
+    "peerStatus": {
+      "isAvailable": true,
+      "lastStatusCheck": 1693047246940
+    },
+    "apiStatus": {
+      "restGatewayUrl": "https://xym907.allnodes.me:3001",
+      "isAvailable": true,
+      "isHttpsEnabled": true,
+      "lastStatusCheck": 1693047247086,
+      "webSocket": {
+        "isAvailable": true,
+        "wss": true,
+        "url": "wss://xym907.allnodes.me:3001/ws"
+      },
+      "nodePublicKey": "17EDFB74DCDA5D92AA3C93CC89FCA79812F53F20531028D35F23CA1379C6CBE6",
+      "chainHeight": 2567967,
+      "finalization": {
+        "height": 2567940,
+        "epoch": 1785,
+        "point": 20,
+        "hash": "A0999197DAF687B9F6B75D80C20053DB428A996E4794D7C81795B86807E6DC94"
+      },
+      "unlockedAccountCount": 6,
+      "isAvailableNetworkProperties": true,
+      "nodeStatus": {
+        "apiNode": "up",
+        "db": "up"
+      },
+      "restVersion": "2.4.3"
+    },
+    "certificateExpiration": "2024-05-13T11:55:24.000Z",
+    "__v": 0
+  },
+  {
+    "_id": "64e9dc729311eb0012b7bcb3",
+    "version": 16777990,
+    "publicKey": "A72B54DAA2BE7E3E53D16F9E0B45E4235FDAFF4111FD6BD1A1CA63BC8CD77E5F",
+    "networkGenerationHashSeed": "57F7DA205008026C776CB6AED843393F04CD458E0AA2D9F1D5F31A402072B2D6",
+    "roles": 3,
+    "port": 7900,
+    "networkIdentifier": 104,
+    "host": "02-symbol-node.tokyo",
+    "friendlyName": "ossa-miles",
+    "lastAvailable": "2023-08-26T11:05:22.166Z",
+    "hostDetail": {
+      "host": "02-symbol-node.tokyo",
+      "coordinates": {
+        "latitude": 34.6753,
+        "longitude": 133.751
+      },
+      "location": "Soja, 33, Japan",
+      "ip": "45.32.11.243",
+      "organization": "Vultr Holdings, LLC",
+      "as": "AS20473 The Constant Company, LLC",
+      "continent": "Asia",
+      "country": "Japan",
+      "region": "33",
+      "city": "Soja",
+      "district": "",
+      "zip": "719-1126"
+    },
+    "peerStatus": {
+      "isAvailable": true,
+      "lastStatusCheck": 1693047637118
+    },
+    "apiStatus": {
+      "restGatewayUrl": "https://02-symbol-node.tokyo:3001",
+      "isAvailable": true,
+      "isHttpsEnabled": true,
+      "lastStatusCheck": 1693047638496,
+      "webSocket": {
+        "isAvailable": true,
+        "wss": true,
+        "url": "wss://02-symbol-node.tokyo:3001/ws"
+      },
+      "nodePublicKey": "AAC411E625B6AE08807A74502EC0C78F7FCDC5CC22481547B28A6F045F9DD5BF",
+      "chainHeight": 2567980,
+      "finalization": {
+        "height": 2567964,
+        "epoch": 1785,
+        "point": 21,
+        "hash": "F8FC91DE0FDF306F191A92C00DFEDB0D062813D2E8D4D307106D8CD512B80530"
+      },
+      "unlockedAccountCount": 7,
+      "isAvailableNetworkProperties": true,
+      "nodeStatus": {
+        "apiNode": "up",
+        "db": "up"
+      },
+      "restVersion": "2.4.3"
+    },
+    "certificateExpiration": "2024-01-14T16:05:21.000Z",
+    "__v": 0
+  },
+  {
+    "_id": "64e9dc729311eb0012b7ba48",
+    "version": 16777990,
+    "publicKey": "6F63271F0AF17EABACBB4D8E1CB6F38F039BC3BD621B2792AF0280E1D8659C80",
+    "networkGenerationHashSeed": "57F7DA205008026C776CB6AED843393F04CD458E0AA2D9F1D5F31A402072B2D6",
+    "roles": 3,
+    "port": 7900,
+    "networkIdentifier": 104,
+    "host": "02.high-performance.symbol-node.jp",
+    "friendlyName": "High-Performance Node.02",
+    "lastAvailable": "2023-08-26T11:05:22.165Z",
+    "hostDetail": {
+      "host": "02.high-performance.symbol-node.jp",
+      "coordinates": {
+        "latitude": 35.6887,
+        "longitude": 139.745
+      },
+      "location": "Tokyo, 13, Japan",
+      "ip": "160.16.242.30",
+      "organization": "SAKURA Internet Inc.",
+      "as": "AS9370 SAKURA Internet Inc.",
+      "continent": "Asia",
+      "country": "Japan",
+      "region": "13",
+      "city": "Tokyo",
+      "district": "",
+      "zip": "100-0001"
+    },
+    "peerStatus": {
+      "isAvailable": true,
+      "lastStatusCheck": 1693047087921
+    },
+    "apiStatus": {
+      "restGatewayUrl": "https://02.high-performance.symbol-node.jp:3001",
+      "isAvailable": true,
+      "isHttpsEnabled": true,
+      "lastStatusCheck": 1693047089746,
+      "webSocket": {
+        "isAvailable": true,
+        "wss": true,
+        "url": "wss://02.high-performance.symbol-node.jp:3001/ws"
+      },
+      "nodePublicKey": "E81783B77E481729A2E5E56D6D817FD59535F279B012E0A4350F2BA66C750757",
+      "chainHeight": 2567962,
+      "finalization": {
+        "height": 2567940,
+        "epoch": 1785,
+        "point": 20,
+        "hash": "A0999197DAF687B9F6B75D80C20053DB428A996E4794D7C81795B86807E6DC94"
+      },
+      "unlockedAccountCount": 3,
+      "isAvailableNetworkProperties": true,
+      "nodeStatus": {
+        "apiNode": "up",
+        "db": "up"
+      },
+      "restVersion": "2.4.3"
+    },
+    "certificateExpiration": "2024-04-27T18:29:42.000Z",
+    "__v": 0
+  },
+  {
+    "_id": "64e9dc729311eb0012b7b9db",
+    "version": 16777990,
+    "publicKey": "613F3BF8AAB4D6CB05D009436AF22F4D9711F2D1148A3E8CA017393734454F35",
+    "networkGenerationHashSeed": "57F7DA205008026C776CB6AED843393F04CD458E0AA2D9F1D5F31A402072B2D6",
+    "roles": 7,
+    "port": 7900,
+    "networkIdentifier": 104,
+    "host": "conrad.symbolnode.ninja",
+    "friendlyName": "roxette",
+    "lastAvailable": "2023-08-26T11:05:22.165Z",
+    "hostDetail": {
+      "host": "conrad.symbolnode.ninja",
+      "coordinates": {
+        "latitude": 50.475,
+        "longitude": 12.365
+      },
+      "location": "Falkenstein, SN, Germany",
+      "ip": "116.202.114.43",
+      "organization": "Hetzner",
+      "as": "AS24940 Hetzner Online GmbH",
+      "continent": "Europe",
+      "country": "Germany",
+      "region": "SN",
+      "city": "Falkenstein",
+      "district": "",
+      "zip": "08223"
+    },
+    "peerStatus": {
+      "isAvailable": true,
+      "lastStatusCheck": 1693046990956
+    },
+    "apiStatus": {
+      "restGatewayUrl": "https://conrad.symbolnode.ninja:3001",
+      "isAvailable": true,
+      "isHttpsEnabled": true,
+      "lastStatusCheck": 1693046991189,
+      "webSocket": {
+        "isAvailable": true,
+        "wss": true,
+        "url": "wss://conrad.symbolnode.ninja:3001/ws"
+      },
+      "nodePublicKey": "07A9C82CA8828BACE7FC6502AE4A0F6659631597B05CBF699EA687BCA8647BDE",
+      "chainHeight": 2567959,
+      "finalization": {
+        "height": 2567940,
+        "epoch": 1785,
+        "point": 20,
+        "hash": "A0999197DAF687B9F6B75D80C20053DB428A996E4794D7C81795B86807E6DC94"
+      },
+      "unlockedAccountCount": 11,
+      "isAvailableNetworkProperties": true,
+      "nodeStatus": {
+        "apiNode": "up",
+        "db": "up"
+      },
+      "restVersion": "2.4.3"
+    },
+    "votingKeyEndEpoch": 1912,
+    "certificateExpiration": "2024-03-11T11:05:56.000Z",
+    "__v": 0
+  }
+]

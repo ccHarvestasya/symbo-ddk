@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ac5c81bc-f8f0-4034-bec6-01e0f6b53342" name="変更" comment="コメント修正" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dart File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2UNnlrYuGTA3g0k8dwqm9DMG4sL" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" />
+    <panes>
+      <pane id="ProjectPane">
+        <option name="show-excluded-files" value="false" />
+      </pane>
+    </panes>
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;com.google.services.firebase.aqiPopupShown&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;H:/project/ws_dart/symbol_ddk&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="H:\project\ws_dart\symbol_ddk\test\data\util\comsa_nft" />
+      <recent name="H:\project\ws_dart\symbol_ddk\test\src\infra" />
+      <recent name="H:\project\ws_dart\symbol_ddk\test\data\infra\statistics_service_http" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Dart テスト.transaction_http_test.dart のテスト">
+    <configuration name="comsa_nft_test.dart のテスト" type="DartTestRunConfigurationType" factoryName="Dart Test" temporary="true" nameIsGenerated="true">
+      <option name="filePath" value="$PROJECT_DIR$/test/src/util/comsa_nft_test.dart" />
+      <option name="testName" value="comsa_nft_test.dart" />
+      <method v="2" />
+    </configuration>
+    <configuration name="metadata_http_test.dart のテスト" type="DartTestRunConfigurationType" factoryName="Dart Test" temporary="true" nameIsGenerated="true">
+      <option name="filePath" value="$PROJECT_DIR$/test/src/infra/metadata_http_test.dart" />
+      <option name="testName" value="metadata_http_test.dart" />
+      <method v="2" />
+    </configuration>
+    <configuration name="statistics_service_http_test.dart のテスト" type="DartTestRunConfigurationType" factoryName="Dart Test" temporary="true" nameIsGenerated="true">
+      <option name="filePath" value="$PROJECT_DIR$/test/src/infra/statistics_service_http_test.dart" />
+      <option name="testName" value="statistics_service_http_test.dart" />
+      <method v="2" />
+    </configuration>
+    <configuration name="transaction_http_test.dart のテスト" type="DartTestRunConfigurationType" factoryName="Dart Test" temporary="true" nameIsGenerated="true">
+      <option name="filePath" value="$PROJECT_DIR$/test/src/infra/transaction_http_test.dart" />
+      <option name="testName" value="transaction_http_test.dart" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ComsaNFTデコード" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
+      <option name="testName" value="ComsaNFTデコード" />
+      <option name="testFile" value="$PROJECT_DIR$/test/src/util/comsa_nft_test.dart" />
+      <option name="useRegexp" value="false" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Dart テスト.transaction_http_test.dart のテスト" />
+        <item itemvalue="Dart テスト.statistics_service_http_test.dart のテスト" />
+        <item itemvalue="Dart テスト.metadata_http_test.dart のテスト" />
+        <item itemvalue="Dart テスト.comsa_nft_test.dart のテスト" />
+        <item itemvalue="Flutter Test.ComsaNFTデコード" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="アプリケーションレベル" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="デフォルトタスク">
+      <changelist id="ac5c81bc-f8f0-4034-bec6-01e0f6b53342" name="変更" comment="" />
+      <created>1692789059622</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1692789059622</updated>
+    </task>
+    <task id="LOCAL-00001" summary="DartPackageプロジェクト作成">
+      <created>1692789508834</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1692789508834</updated>
+    </task>
+    <task id="LOCAL-00002" summary="StatisticService取得クラス作成">
+      <created>1693007176653</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1693007176653</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Metadata取得クラス作成">
+      <created>1693013226583</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1693013226583</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Transaction取得クラス作成">
+      <created>1693020150899</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1693020150899</updated>
+    </task>
+    <task id="LOCAL-00005" summary="ComsaNFT取得クラス作成">
+      <created>1693057547937</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1693057547937</updated>
+    </task>
+    <task id="LOCAL-00006" summary="ComsaNFTデータソート修正">
+      <created>1693099724774</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1693099724775</updated>
+    </task>
+    <task id="LOCAL-00007" summary="ComsaNFTデータチャンク分割数修正">
+      <created>1693103795745</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1693103795745</updated>
+    </task>
+    <task id="LOCAL-00008" summary="無視ファイル追加">
+      <created>1693105295736</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1693105295736</updated>
+    </task>
+    <task id="LOCAL-00009" summary="コメント修正">
+      <created>1693108154782</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1693108154782</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="DartPackageプロジェクト作成" />
+    <MESSAGE value="StatisticService取得クラス作成" />
+    <MESSAGE value="Metadata取得クラス作成" />
+    <MESSAGE value="Transaction取得クラス作成" />
+    <MESSAGE value="ComsaNFT取得クラス作成" />
+    <MESSAGE value="ComsaNFTデータソート修正" />
+    <MESSAGE value="ComsaNFTデータチャンク分割数修正" />
+    <MESSAGE value="無視ファイル追加" />
+    <MESSAGE value="コメント修正" />
+    <option name="LAST_COMMIT_MESSAGE" value="コメント修正" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="dart-exception" />
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="$PROJECT_DIR$/coverage/lcov.info" NAME="tests in statistics_service_http_test.dart のカバレッジ結果" MODIFIED="1692918367750" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="FlutterCoverageRunner" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>

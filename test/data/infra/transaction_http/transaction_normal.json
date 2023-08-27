@@ -1,0 +1,55 @@
+{
+  "meta": {
+    "height": "2550434",
+    "hash": "EABF396F0BD8704C1582C7A15B5876F32D5B2D1938C549C00BDE3A3E18780531",
+    "merkleComponentHash": "578A6F7DA907B3DF57745127EF473604A6AC44979113453D1DC42BCFF209F0B7",
+    "index": 0,
+    "timestamp": "76667466069",
+    "feeMultiplier": 100
+  },
+  "transaction": {
+    "size": 368,
+    "signature": "AD3C5AF614CE4ABE5449A868FDDDF5020FC2C4EA7C9FE42349F6BEE16EC0CA267235EF89A78EA39F82551F7FBD3EF117661FAF0BDE19452708FF509C669B490F",
+    "signerPublicKey": "12DF16F6DC102B9BB17C450E56315E63EEEDCC3E7E6692B37C9A0B1C22D93DCD",
+    "version": 2,
+    "network": 104,
+    "type": 16705,
+    "maxFee": "36800",
+    "deadline": "76688958369",
+    "transactionsHash": "85192B619E325CD2B761D1B481CE73389BFD9FCF7E8EF643DB642DEE45637285",
+    "cosignatures": [
+      {
+        "version": "0",
+        "signerPublicKey": "032613603350D19639891C5D96DF55BDB7FD4CFBE03BAC367760E1C78C614EA9",
+        "signature": "3EF34C74DF42AE595E67C8A7FFD30F1D2FE370981817F74C06BA5649210432AC5EB7A4D16E8AEC7A1D93E16C49C279559B1CE7EE974D41DFF8EDADCD0D3ABC00"
+      }
+    ],
+    "transactions": [
+      {
+        "meta": {
+          "height": "2550434",
+          "aggregateHash": "EABF396F0BD8704C1582C7A15B5876F32D5B2D1938C549C00BDE3A3E18780531",
+          "aggregateId": "64E1D0C9588C273D79250824",
+          "index": 0,
+          "timestamp": "76667466069",
+          "feeMultiplier": 100
+        },
+        "transaction": {
+          "signerPublicKey": "179DE5E32109AE013AF001934D6522DAE459A23C67981973E61CD5D1685D007D",
+          "version": 1,
+          "network": 104,
+          "type": 16724,
+          "recipientAddress": "685196962F3CB7ADD6150E2F8B40F074B46009411490B94A",
+          "mosaics": [
+            {
+              "id": "6BED913FA20223F8",
+              "amount": "160000000"
+            }
+          ]
+        },
+        "id": "64E1D0C9588C273D79250825"
+      }
+    ]
+  },
+  "id": "64E1D0C9588C273D79250824"
+}
