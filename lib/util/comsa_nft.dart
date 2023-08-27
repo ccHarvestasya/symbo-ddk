@@ -1,3 +1,4 @@
+import 'dart:collection';
 import 'dart:convert' as convert;
 import 'dart:typed_data';
 
@@ -98,29 +99,26 @@ class ComsaNft {
     } else {
       /* comsa-nft-1.1 */
       // インナートランザクション取得
-      List<Future<List<TransferTransaction>>> aggInnerTxFutureList = [];
+      List<Future<Map<int, List<TransferTransaction>>>> aggInnerTxFutureListMap = [];
       for (int i = 0; i < chunkedList.length; i++) {
-        aggInnerTxFutureList.add(_getInnerTx(hostPortList[i], chunkedList[i]));
+        aggInnerTxFutureListMap.add(_getInnerTx(hostPortList[i], chunkedList[i]));
       }
       // 完了待機
-      List<List<TransferTransaction>> futureResultList = await Future.wait(aggInnerTxFutureList);
+      List<Map<int, List<TransferTransaction>>> futureResultListMap =
+          await Future.wait(aggInnerTxFutureListMap);
+      // トランザクションを一つのマップに連結
+      Map<int, List<TransferTransaction>> txListMap = {};
+      for (Map<int, List<TransferTransaction>> innerTxListMap in futureResultListMap) {
+        txListMap.addAll(innerTxListMap);
+      }
       // ソート
-      for (List<TransferTransaction> innerTxList in futureResultList) {
-        innerTxList.sort(((a, b) => a.transactionInfo!.index.compareTo(b.transactionInfo!.index)));
-      }
-      // トランザクションを一つのリストに連結
-      List<TransferTransaction> txList = [];
-      for (List<TransferTransaction> innerTxList in futureResultList) {
-        for (TransferTransaction innerTx in innerTxList) {
-          if (innerTx.isPlainMessage != null && innerTx.isPlainMessage == false) {
-            // データのみ取得
-            txList.add(innerTx);
-          }
-        }
-      }
+      txListMap = SplayTreeMap.from(txListMap, (a, b) => a.compareTo(b));
       // トランザクションリストのメッセージを連結
-      for (TransferTransaction tx in txList) {
-        nftStringData += tx.message!;
+      for (List<TransferTransaction> txList in txListMap.values) {
+        txList.removeAt(0); // 最初は不要なので削除
+        for (TransferTransaction tx in txList) {
+          nftStringData += tx.message!;
+        }
       }
     }
 
@@ -159,7 +157,8 @@ class ComsaNft {
       } else if (metadataEntry.scopedMetadataKey == ComsaMetadataType.aggregateTxNumber) {
         // NFTデータのアグリゲートトランザクション数
         transactionNumber = int.parse(metadataEntry.value);
-      } else if (metadataEntry.scopedMetadataKey == ComsaMetadataType.comsaNftInfoDetail) {
+      } else if (metadataEntry.scopedMetadataKey == ComsaMetadataType.comsaNftInfoDetail ||
+          metadataEntry.scopedMetadataKey == ComsaMetadataType.comsaNftInfoDetail2) {
         // NFT情報JSON
         Map<String, dynamic> nftJson = _convertJson(metadataEntry.value);
         comsaNftInfoDetail = ComsaNftInfoDetail(
@@ -180,7 +179,7 @@ class ComsaNft {
         // NFTデータのアグリゲートトランザクションハッシュ
         aggregateTransactionHashList = _convertJson(metadataEntry.value).cast<String>();
       } else {
-        throw Exception('不明な Comsa NFT Metadata Key です');
+        throw Exception('${metadataEntry.scopedMetadataKey}: 不明な Comsa NFT Metadata Key です');
       }
     }
 
@@ -216,19 +215,29 @@ class ComsaNft {
   }
 
   /// # アグリゲートトランザクション内トランザクションリスト取得
-  Future<List<TransferTransaction>> _getInnerTx(String hostPort, List<String> txHashList) async {
-    List<TransferTransaction> txList = [];
+  Future<Map<int, List<TransferTransaction>>> _getInnerTx(
+      String hostPort, List<String> txHashList) async {
+    Map<int, List<TransferTransaction>> txMapList = {};
 
     TransactionHttp txHttp = TransactionHttp(hostPort);
     for (String txId in txHashList) {
       AggregateTransaction aggTx = (await txHttp.getConfirmedTx(txId)) as AggregateTransaction;
+      aggTx.innerTransaction
+          .sort(((a, b) => a.transactionInfo!.index.compareTo(b.transactionInfo!.index)));
+      // 1番目のJson解析
+      String jsonString = (aggTx.innerTransaction[0] as TransferTransaction).message!;
+      jsonString = jsonString.substring(1); // 1文字目のヌル文字削除
+      Map<String, dynamic> jsonData = _convertJson(jsonString);
+      int index = jsonData['index'];
+      List<TransferTransaction> txList = [];
       for (Transaction tx in aggTx.innerTransaction) {
         TransferTransaction trnTx = tx as TransferTransaction;
         txList.add(trnTx);
       }
+      txMapList[index] = txList;
     }
 
-    return txList;
+    return txMapList;
   }
 
   /// # String-JsonClass変換

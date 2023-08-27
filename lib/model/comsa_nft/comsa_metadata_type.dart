@@ -5,6 +5,9 @@ class ComsaMetadataType {
   /// NFT情報JSON
   static const String comsaNftInfoDetail = 'DA030AA7795EBE75';
 
+  /// NFT情報JSON
+  static const String comsaNftInfoDetail2 = '8E0823CEF8A40075';
+
   /// バージョン
   static const String version = '8D9A3BDD21391AA2';
 
