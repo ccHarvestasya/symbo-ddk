@@ -80,9 +80,16 @@ class TransactionHttp {
       ));
     }
     StringUtil stringUtil = StringUtil();
+    bool? isPlainMsg;
     String? msg;
     if (jsonData['transaction']['message'] != null) {
-      msg = stringUtil.convStringUtf8(jsonData['transaction']['message']);
+      try {
+        isPlainMsg = true;
+        msg = stringUtil.convStringUtf8(jsonData['transaction']['message']);
+      } catch (e) {
+        isPlainMsg = false;
+        msg = jsonData['transaction']['message'];
+      }
     }
     /* 転送トランザクション */
     TransferTransaction transferTransaction = TransferTransaction(
@@ -96,6 +103,7 @@ class TransactionHttp {
       deadline: jsonData['transaction']['deadline'],
       recipientAddress: jsonData['transaction']['recipientAddress'],
       transactionInfo: transactionInfo,
+      isPlainMessage: isPlainMsg,
       message: msg,
       mosaics: mosaicList,
     );

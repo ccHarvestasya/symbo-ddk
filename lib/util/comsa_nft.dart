@@ -1,6 +1,8 @@
 import 'dart:convert' as convert;
 import 'dart:typed_data';
 
+import 'package:convert/convert.dart';
+
 import '../infra/metadata_http.dart';
 import '../infra/metadata_search_criteria.dart';
 import '../infra/page.dart';
@@ -20,16 +22,24 @@ class ComsaNft {
   /// # ComsaNFTデコーダ
   /// [mosaicId]に紐付いたNFTデータをデコードする
   Future<Uint8List> decoder({required String mosaicId}) async {
-    String nftBase64 = await decoderBase64(mosaicId: mosaicId);
-    // Base64デコード
-    final base64Decoder = convert.base64.decoder;
-    Uint8List nftData = base64Decoder.convert(nftBase64);
+    String nftStringData = await _getNftStringData(mosaicId: mosaicId);
+
+    Uint8List nftData;
+    if (_comsaNftInfoDetail!.version == 'comsa-nft-1.0') {
+      // Base64デコード
+      final base64Decoder = convert.base64.decoder;
+      nftData = base64Decoder.convert(nftStringData);
+    } else {
+      // 16進文字列をUint8Listに変換
+      List<int> intList = hex.decode(nftStringData);
+      nftData = Uint8List.fromList(intList);
+    }
     return nftData;
   }
 
   /// # ComsaNFTデコーダ
   /// [mosaicId]に紐付いたNFTデータをデコードする
-  Future<String> decoderBase64({required String mosaicId}) async {
+  Future<String> _getNftStringData({required String mosaicId}) async {
     /** StatisticsService取得 **/
     StatisticsServiceHttp ssHttp = StatisticsServiceHttp();
 
@@ -55,32 +65,66 @@ class ComsaNft {
       chunkedList.add(aggregateTransactionHashList.skip(count).take(chunkSize).toList());
       count += chunkSize;
     } while (count < aggregateTransactionHashList.length);
-    // トランザクションメッセージ取得
-    List<Future<List<String>>> aggTxMsgFutureList = [];
-    for (int i = 0; i < chunkedList.length; i++) {
-      aggTxMsgFutureList.add(_getAggregateTxMessage(hostPortList[i], chunkedList[i]));
-    }
-    // 完了待機
-    List<List<String>> futureResultList = await Future.wait(aggTxMsgFutureList);
-    // トランザクションメッセージを一つのリストに連結
-    List<String> txMsgList = [];
-    final regExp = RegExp(r'\d{5}#');
-    for (List<String> innerTxMsgList in futureResultList) {
-      for (String innerTxMsg in innerTxMsgList) {
-        if (regExp.hasMatch(innerTxMsg)) {
-          txMsgList.add(innerTxMsg);
+
+    // 1.0はメッセージの先頭で並び替える
+    // 1.1はインナートランザクションのメタデータのインデックスで並び替える
+    String nftStringData = '';
+    if (_comsaNftInfoDetail!.version == 'comsa-nft-1.0') {
+      /* comsa-nft-1.0 */
+      // トランザクションメッセージ取得
+      List<Future<List<String>>> aggTxMsgFutureList = [];
+      for (int i = 0; i < chunkedList.length; i++) {
+        aggTxMsgFutureList.add(_getAggregateTxMessage(hostPortList[i], chunkedList[i]));
+      }
+      // 完了待機
+      List<List<String>> futureResultList = await Future.wait(aggTxMsgFutureList);
+      // トランザクションメッセージを一つのリストに連結
+      List<String> txMsgList = [];
+      final regExp = RegExp(r'\d{5}#');
+      for (List<String> innerTxMsgList in futureResultList) {
+        for (String innerTxMsg in innerTxMsgList) {
+          if (regExp.hasMatch(innerTxMsg)) {
+            // データのみ取得
+            txMsgList.add(innerTxMsg);
+          }
         }
       }
-    }
-    // ソート
-    txMsgList.sort(((a, b) => a.substring(0, 6).compareTo(b.substring(0, 6))));
-    // リストを文字列に連結
-    String nftBase64 = '';
-    for (String txMsg in txMsgList) {
-      nftBase64 += txMsg.substring(7);
+      // ソート
+      txMsgList.sort(((a, b) => a.substring(0, 6).compareTo(b.substring(0, 6))));
+      // リストを文字列に連結
+      for (String txMsg in txMsgList) {
+        nftStringData += txMsg.substring(7);
+      }
+    } else {
+      /* comsa-nft-1.1 */
+      // インナートランザクション取得
+      List<Future<List<TransferTransaction>>> aggInnerTxFutureList = [];
+      for (int i = 0; i < chunkedList.length; i++) {
+        aggInnerTxFutureList.add(_getInnerTx(hostPortList[i], chunkedList[i]));
+      }
+      // 完了待機
+      List<List<TransferTransaction>> futureResultList = await Future.wait(aggInnerTxFutureList);
+      // ソート
+      for (List<TransferTransaction> innerTxList in futureResultList) {
+        innerTxList.sort(((a, b) => a.transactionInfo!.index.compareTo(b.transactionInfo!.index)));
+      }
+      // トランザクションを一つのリストに連結
+      List<TransferTransaction> txList = [];
+      for (List<TransferTransaction> innerTxList in futureResultList) {
+        for (TransferTransaction innerTx in innerTxList) {
+          if (innerTx.isPlainMessage != null && innerTx.isPlainMessage == false) {
+            // データのみ取得
+            txList.add(innerTx);
+          }
+        }
+      }
+      // トランザクションリストのメッセージを連結
+      for (TransferTransaction tx in txList) {
+        nftStringData += tx.message!;
+      }
     }
 
-    return nftBase64;
+    return nftStringData;
   }
 
   ComsaNftInfoDetail? get comsaNftInfoDetail => _comsaNftInfoDetail;
@@ -169,6 +213,22 @@ class ComsaNft {
     }
 
     return txMsgList;
+  }
+
+  /// # アグリゲートトランザクション内トランザクションリスト取得
+  Future<List<TransferTransaction>> _getInnerTx(String hostPort, List<String> txHashList) async {
+    List<TransferTransaction> txList = [];
+
+    TransactionHttp txHttp = TransactionHttp(hostPort);
+    for (String txId in txHashList) {
+      AggregateTransaction aggTx = (await txHttp.getConfirmedTx(txId)) as AggregateTransaction;
+      for (Transaction tx in aggTx.innerTransaction) {
+        TransferTransaction trnTx = tx as TransferTransaction;
+        txList.add(trnTx);
+      }
+    }
+
+    return txList;
   }
 
   /// # String-JsonClass変換
