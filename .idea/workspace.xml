@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac5c81bc-f8f0-4034-bec6-01e0f6b53342" name="変更" comment="ComsaNFT1.1対応">
+    <list default="true" id="ac5c81bc-f8f0-4034-bec6-01e0f6b53342" name="変更" comment="ComsaNFT1.1修正">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/model/comsa_nft/comsa_metadata_type.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/model/comsa_nft/comsa_metadata_type.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/util/comsa_nft.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/util/comsa_nft.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -203,7 +202,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693141290906</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="ComsaNFT1.1修正">
+      <created>1693169852301</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1693169852301</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -248,7 +254,8 @@
     <MESSAGE value="FlutterパッケージからDartパッケージに変更" />
     <MESSAGE value="Flutterパッケージがあったので削除" />
     <MESSAGE value="ComsaNFT1.1対応" />
-    <option name="LAST_COMMIT_MESSAGE" value="ComsaNFT1.1対応" />
+    <MESSAGE value="ComsaNFT1.1修正" />
+    <option name="LAST_COMMIT_MESSAGE" value="ComsaNFT1.1修正" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

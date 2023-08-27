@@ -114,9 +114,10 @@ class ComsaNft {
       // ソート
       txListMap = SplayTreeMap.from(txListMap, (a, b) => a.compareTo(b));
       // トランザクションリストのメッセージを連結
-      for (List<TransferTransaction> txList in txListMap.values) {
-        txList.removeAt(0); // 最初は不要なので削除
-        for (TransferTransaction tx in txList) {
+      for (MapEntry<int, List<TransferTransaction>> txList in txListMap.entries) {
+        print(txList.key);
+        txList.value.removeAt(0); // 最初は不要なので削除
+        for (TransferTransaction tx in txList.value) {
           nftStringData += tx.message!;
         }
       }
