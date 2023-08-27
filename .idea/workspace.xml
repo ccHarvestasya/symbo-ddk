@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac5c81bc-f8f0-4034-bec6-01e0f6b53342" name="変更" comment="コメント修正" />
+    <list default="true" id="ac5c81bc-f8f0-4034-bec6-01e0f6b53342" name="変更" comment="FlutterパッケージからDartパッケージに変更">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/util/comsa_nft_test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/util/comsa_nft_test.dart" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,6 +23,19 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="7f87b1f3-dc3b-4b4e-8822-3d5607638a33" />
+        <option name="url" value="https://github.com/ccHarvestasya/symbol-ddk.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -56,7 +73,7 @@
       <recent name="H:\project\ws_dart\symbol_ddk\test\data\infra\statistics_service_http" />
     </key>
   </component>
-  <component name="RunManager" selected="Dart テスト.transaction_http_test.dart のテスト">
+  <component name="RunManager" selected="Dart テスト.statistics_service_http_test.dart のテスト">
     <configuration name="comsa_nft_test.dart のテスト" type="DartTestRunConfigurationType" factoryName="Dart Test" temporary="true" nameIsGenerated="true">
       <option name="filePath" value="$PROJECT_DIR$/test/src/util/comsa_nft_test.dart" />
       <option name="testName" value="comsa_nft_test.dart" />
@@ -85,9 +102,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Dart テスト.transaction_http_test.dart のテスト" />
         <item itemvalue="Dart テスト.statistics_service_http_test.dart のテスト" />
         <item itemvalue="Dart テスト.metadata_http_test.dart のテスト" />
+        <item itemvalue="Dart テスト.transaction_http_test.dart のテスト" />
         <item itemvalue="Dart テスト.comsa_nft_test.dart のテスト" />
         <item itemvalue="Flutter Test.ComsaNFTデコード" />
       </list>
@@ -165,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693108154782</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="FlutterパッケージからDartパッケージに変更">
+      <created>1693122357813</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1693122357813</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -185,7 +209,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="master/main" />
                       </list>
                     </value>
                   </entry>
@@ -207,7 +231,8 @@
     <MESSAGE value="ComsaNFTデータチャンク分割数修正" />
     <MESSAGE value="無視ファイル追加" />
     <MESSAGE value="コメント修正" />
-    <option name="LAST_COMMIT_MESSAGE" value="コメント修正" />
+    <MESSAGE value="FlutterパッケージからDartパッケージに変更" />
+    <option name="LAST_COMMIT_MESSAGE" value="FlutterパッケージからDartパッケージに変更" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

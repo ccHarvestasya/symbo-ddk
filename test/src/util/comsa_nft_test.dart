@@ -1,6 +1,5 @@
 import 'dart:typed_data';
 
-import 'package:file_saver/file_saver.dart';
 import 'package:http/http.dart' as http;
 import 'package:http/testing.dart';
 import 'package:logger/logger.dart';
@@ -77,12 +76,12 @@ void main() {
 
     expect(nftData, isNotNull);
 
-    String path = await FileSaver.instance.saveFile(
-      name: 'test',
-      bytes: nftData,
-      ext: 'jpg',
-      mimeType: MimeType.jpeg,
-    );
-    logger.d('$pathに保存しました');
+    // String path = await FileSaver.instance.saveFile(
+    //   name: 'test',
+    //   bytes: nftData,
+    //   ext: 'jpg',
+    //   mimeType: MimeType.jpeg,
+    // );
+    // logger.d('$pathに保存しました');
   });
 }
