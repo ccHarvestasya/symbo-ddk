@@ -67,6 +67,8 @@ class ComsaNft {
       count += chunkSize;
     } while (count < aggregateTransactionHashList.length);
 
+    print(_comsaNftInfoDetail!.version);
+
     // 1.0はメッセージの先頭で並び替える
     // 1.1はインナートランザクションのメタデータのインデックスで並び替える
     String nftStringData = '';
@@ -115,7 +117,6 @@ class ComsaNft {
       txListMap = SplayTreeMap.from(txListMap, (a, b) => a.compareTo(b));
       // トランザクションリストのメッセージを連結
       for (MapEntry<int, List<TransferTransaction>> txList in txListMap.entries) {
-        print(txList.key);
         txList.value.removeAt(0); // 最初は不要なので削除
         for (TransferTransaction tx in txList.value) {
           nftStringData += tx.message!;
@@ -149,7 +150,7 @@ class ComsaNft {
       } else if (metadataEntry.scopedMetadataKey == ComsaMetadataType.tmbAggregateTxHash) {
         // サムネイルのアグリゲートトランザクションハッシュ
         thumbnailAggregateTransactionHashList = _convertJson(metadataEntry.value).cast<String>();
-      } else if (metadataEntry.scopedMetadataKey == ComsaMetadataType.description) {
+      } else if (ComsaMetadataType.descriptionList.contains(metadataEntry.scopedMetadataKey)) {
         // NFTの説明文
         description = metadataEntry.value;
       } else if (metadataEntry.scopedMetadataKey == ComsaMetadataType.endorser) {
@@ -174,11 +175,9 @@ class ComsaNft {
           mosaic: nftJson['mosaic'],
           endorser: nftJson['endorser'],
         );
-      } else if (metadataEntry.scopedMetadataKey == ComsaMetadataType.aggregateTxHash1 ||
-          metadataEntry.scopedMetadataKey == ComsaMetadataType.aggregateTxHash2 ||
-          metadataEntry.scopedMetadataKey == ComsaMetadataType.aggregateTxHash3) {
+      } else if (ComsaMetadataType.aggregateTxHashList.contains(metadataEntry.scopedMetadataKey)) {
         // NFTデータのアグリゲートトランザクションハッシュ
-        aggregateTransactionHashList = _convertJson(metadataEntry.value).cast<String>();
+        aggregateTransactionHashList.addAll(_convertJson(metadataEntry.value).cast<String>());
       } else {
         throw Exception('${metadataEntry.scopedMetadataKey}: 不明な Comsa NFT Metadata Key です');
       }

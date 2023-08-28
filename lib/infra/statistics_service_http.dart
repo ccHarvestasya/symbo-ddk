@@ -72,11 +72,11 @@ class StatisticsServiceHttp {
     }
     // 正常なノードを応答速度順に取得
     _availableNodeList = await checkNetworkPropertiesAvailable(hostList);
-    // 上位5つ残し削除
+    // 上位3つ残し削除
     if (_availableNodeList.isEmpty) {
       throw Exception('正常なSSLノードが存在しません');
-    } else if (5 < _availableNodeList.length) {
-      _availableNodeList.removeRange(5, _availableNodeList.length);
+    } else if (3 < _availableNodeList.length) {
+      _availableNodeList.removeRange(3, _availableNodeList.length);
     }
   }
 

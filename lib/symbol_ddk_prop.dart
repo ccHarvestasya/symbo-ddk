@@ -6,5 +6,5 @@ class SymbolDDKProp {
   static const String statisticsServicePath = '/sss';
 
   /// Statistics Service ノード一覧取得件数
-  static const int statisticsServiceNodesLimit = 10;
+  static const int statisticsServiceNodesLimit = 5;
 }

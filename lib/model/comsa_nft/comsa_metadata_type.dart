@@ -11,8 +11,11 @@ class ComsaMetadataType {
   /// バージョン
   static const String version = '8D9A3BDD21391AA2';
 
-  /// NFT説明文
-  static const String description = 'AD05EB49A5415213';
+  /// NFT説明文リスト
+  static const List<String> descriptionList = [
+    'AD05EB49A5415213',
+    'EABD18B1A608B007',
+  ];
 
   /// エンドーサ
   static const String endorser = '89BCD45087AF19BF';
@@ -23,12 +26,15 @@ class ComsaMetadataType {
   /// NFTデータアグリゲートトランザクション数
   static const String aggregateTxNumber = 'FE58A23DBB642C67';
 
-  /// NFTデータアグリゲートトランザクションハッシュ1
-  static const String aggregateTxHash1 = 'D77BFE313AF3EF1F';
-
-  /// NFTデータアグリゲートトランザクションハッシュ2
-  static const String aggregateTxHash2 = 'A0B069B710B3754C';
-
-  /// NFTデータアグリゲートトランザクションハッシュ3
-  static const String aggregateTxHash3 = 'AACFBE3CC93EABF3';
+  /// NFTデータアグリゲートトランザクションハッシュ
+  static const List<String> aggregateTxHashList = [
+    'D77BFE313AF3EF1F',
+    'A0B069B710B3754C',
+    'AACFBE3CC93EABF3',
+    'FA60A37C56457F1A',
+    'D4B5933FA2FD62E7',
+    'D4B5933FA2FD62E7',
+    'BABD9C10F590F0F3',
+    'D75B016AA9FAC056',
+  ];
 }
